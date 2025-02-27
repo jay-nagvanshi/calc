@@ -1,7 +1,7 @@
 import streamlit as st
 
 
- def calculator(num1,num2,opr):
+def calculator(num1,num2,opr):
 
      if opr=="+":
          return num1+num2
@@ -15,7 +15,7 @@ import streamlit as st
          else:
              return "Division by zero is not allowed"
 
- def main():   
+def main():   
      st.title("welcome to My Calculator...")    
      number1=st.number_input("Enter number..",format="%2f")
      operator=st.selectbox("Select operator",["+","-","*","/"])
@@ -25,5 +25,5 @@ import streamlit as st
      if st.button("calculate"):
          st.success(result)
 
- if __name__=="__main__":
+if __name__=="__main__":
      main()
